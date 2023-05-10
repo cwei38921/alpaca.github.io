@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html,body{
+    background-color: beige;
+   
+}
+header{
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+}
+.container{
+    width: 95%;
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+}
+.show{
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.choose{
+    width: 50%;
+}
+#backgrounds{
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+    position: absolute;
+
+}
+#nose{
+    width: 90%;
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    z-index: 3;  
+}
+#mouth{
+    position: absolute;
+    width: 50%;
+    right: 150px;
+    bottom: 120px;
+    z-index: 4;
+}
+#ears{
+    position: absolute;
+    width: 100%;
+    z-index:1 ;
+    top: 0px;
+}
+#eyes{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: -60px;
+    left: 30px;
+}
+#hair{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 36px;
+    /* right: -50px; */
+    z-index: 4;
+}
+#leg{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    right: 0;
+}
+#accessories{
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    z-index: 6;
+    
+}
+
+#neck{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 2;
+}
+.project{
+    display: flex;
+    flex-wrap: wrap;
+}
+button , .btn{
+    width: 10rem;
+    height: 3rem;
+    color:#2b299b;
+    background-color: #fff;
+    border: 0.2rem #2b299b solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+button:hover , .btn:hover,.btn:focus{
+    background-color: #2b299b;
+    color:#FFF;
+}
+.download{
+    position: absolute;
+    left: 0;
+    top: 800px;
+}
+@media (max-width:1440px) {
+    header{
+        font-size: 2.2rem;
+        padding: 2rem;
+    }
+    .container{
+        flex-wrap:wrap ;
+        justify-content: center;
+    }
+    .show{
+        width: 500px;
+        height: 500px;
+    }
+    .choose{
+        width: 100%;
+        flex-wrap:wrap ;
+    }
+    .download{
+        top: 0;
+    }
+    button,.btn{
+        width: 6rem;
+        height: 3rem;
+        margin: .1rem;
+        font-size: 1.2rem;
+    }
+    #hair{
+        top:30px;
+     }
+    #mouth{
+        bottom: 120px;
+        right: 100px;
+     }
+}
+@media (max-width:850px) {
+    header{
+        text-align: right;
+    }
+    .show{
+        width: 400px;
+        height: 400px;
+    }
+    #hair{
+       top:20px;
+    }
+    #eyes{
+        top: -40px;
+    }
+    #mouth{
+       bottom: 90px;
+       right: 70px;
+    }
+    #accessories{
+       left: -10px;
+        
+    }
+    button,.btn{
+        width: 5rem;
+        height: 3rem;
+        margin: .1rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    header{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .show{
+        width: 300px;
+        height: 300px;
+    }
+    #hair{
+       top:18px;
+    }
+    #nose{
+        top: 20px;
+        left: 30px;
+    }
+    #eyes{
+        top: -30px;
+    }
+    #mouth{
+       bottom: 50px;
+       right: 65px;
+    }
+    #accessories{
+       left: 0px;
+       top: 30px;
+    }
+    button,.btn{
+        width: 3.2rem;
+        height: 2.5rem;
+        margin: .1rem;
+        font-size: 0.8rem;
+    }
+}
